@@ -1,0 +1,62 @@
+.home {
+    background-color: #f7f7f7;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .hero h1 span {
+    display: block;
+    color: #000;
+  }
+  
+  .hero .subheading {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  .profile-pic {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      text-align: center;
+    }
+  
+    .hero-text {
+      margin-bottom: 1rem;
+    }
+  
+    .profile-pic {
+      max-width: 75%;
+      margin: 0 auto;
+    }
+  }
+  
