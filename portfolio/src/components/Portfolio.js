@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import Genuiz from '../components/assets/Genuiz.png';
 import Emocare from '../components/assets/emocare.png';
 import MoneyMentor from '../components/assets/MoneyMentor.png';
+import { Element } from 'react-scroll';
+
+// container for Portfolio section to make it responsive
 
 const PortfolioSection = styled.section`
   padding: 50px 0;
@@ -22,6 +25,11 @@ const PortfolioGrid = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 30px;
+
+  @media (max-width: 768px){
+    flex-direction : column;
+    align-items: center;
+  }
 `;
 
 const PortfolioItem = styled.div`
@@ -31,10 +39,15 @@ const PortfolioItem = styled.div`
 `;
 
 const PortfolioImage = styled.img`
-  width: 200px;
-  heigth: 150px;
+  width: 230px;
+  height: 150px;
   object-fit: cover;
   border-radius: 10px;
+
+  @media (max-width: 768px){
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const PortfolioTitle = styled.h3`
@@ -52,7 +65,7 @@ const portfolioItems = [
     title: 'Genuiz',
     category: 'AI Quizz generator',
     imgUrl: Genuiz,
-    url: 'https://github.com/GermanDelRioGuzman/GENUIZ', 
+    url: 'https://github.com/GermanDelRioGuzman/GENUIZ',
   },
   {
     title: 'Emocare',
@@ -69,20 +82,22 @@ const portfolioItems = [
 ];
 
 const Portfolio = () => (
-  <PortfolioSection>
-    <Title>Featured Works</Title>
-    <PortfolioGrid>
-      {portfolioItems.map((item, index) => (
-        <PortfolioItem key={index}>
+  <Element name="portfolio">
+    <PortfolioSection>
+      <Title>Featured Works</Title>
+      <PortfolioGrid>
+        {portfolioItems.map((item, index) => (
+          <PortfolioItem key={index}>
             <a href={item.url} target="_blank" rel="noopener noreferrer">
-                <PortfolioImage src={item.imgUrl} alt={item.title} />
+              <PortfolioImage src={item.imgUrl} alt={item.title} />
             </a>
-          <PortfolioTitle>{item.title}</PortfolioTitle>
-          <PortfolioCategory>{item.category}</PortfolioCategory>
-        </PortfolioItem>
-      ))}
-    </PortfolioGrid>
-  </PortfolioSection>
+            <PortfolioTitle>{item.title}</PortfolioTitle>
+            <PortfolioCategory>{item.category}</PortfolioCategory>
+          </PortfolioItem>
+        ))}
+      </PortfolioGrid>
+    </PortfolioSection>
+  </Element>
 );
 
 export default Portfolio;
