@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/GermansPortfolio/static/css/main.047a092e.css",
-    "main.js": "/GermansPortfolio/static/js/main.62f526ee.js",
+    "main.js": "/GermansPortfolio/static/js/main.5b302ff6.js",
     "static/js/453.1407b060.chunk.js": "/GermansPortfolio/static/js/453.1407b060.chunk.js",
+    "static/media/profile2.jpg": "/GermansPortfolio/static/media/profile2.f940c304d42a30cc416d.jpg",
+    "static/media/profile.jpg": "/GermansPortfolio/static/media/profile.388a1ee8b9664f41ae18.jpg",
     "static/media/Genuiz.png": "/GermansPortfolio/static/media/Genuiz.11f3a80712f5c569657a.png",
     "static/media/MoneyMentor.png": "/GermansPortfolio/static/media/MoneyMentor.e85cfcab6ac797ef59a4.png",
     "static/media/emocare.png": "/GermansPortfolio/static/media/emocare.bcf4e67a56e2ff6ea5e1.png",
     "index.html": "/GermansPortfolio/index.html",
     "main.047a092e.css.map": "/GermansPortfolio/static/css/main.047a092e.css.map",
-    "main.62f526ee.js.map": "/GermansPortfolio/static/js/main.62f526ee.js.map",
+    "main.5b302ff6.js.map": "/GermansPortfolio/static/js/main.5b302ff6.js.map",
     "453.1407b060.chunk.js.map": "/GermansPortfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.047a092e.css",
-    "static/js/main.62f526ee.js"
+    "static/js/main.5b302ff6.js"
   ]
 }
